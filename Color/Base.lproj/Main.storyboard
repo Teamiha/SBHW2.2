@@ -85,19 +85,20 @@
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="CMC-nX-Qhd">
                                                 <rect key="frame" x="-2" y="0.0" width="284" height="31"/>
                                                 <connections>
-                                                    <action selector="redSliderAction" destination="BYZ-38-t0r" eventType="valueChanged" id="WY6-X8-j6U"/>
+                                                    <action selector="redSliderAction" destination="BYZ-38-t0r" eventType="valueChanged" id="DqN-KW-eeJ"/>
                                                 </connections>
                                             </slider>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="tJF-ah-f59">
                                                 <rect key="frame" x="-2" y="55" width="284" height="31"/>
                                                 <connections>
+                                                    <action selector="greenSliderAction" destination="BYZ-38-t0r" eventType="valueChanged" id="YIu-fh-VtN"/>
                                                     <action selector="redSliderAction" destination="BYZ-38-t0r" eventType="valueChanged" id="H1J-xT-p1U"/>
                                                 </connections>
                                             </slider>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="MxV-fx-1zz">
                                                 <rect key="frame" x="-2" y="110" width="284" height="31"/>
                                                 <connections>
-                                                    <action selector="redSliderAction" destination="BYZ-38-t0r" eventType="valueChanged" id="kp6-Tu-hv3"/>
+                                                    <action selector="blueSliderAction" destination="BYZ-38-t0r" eventType="valueChanged" id="ffq-rs-yE8"/>
                                                 </connections>
                                             </slider>
                                         </subviews>
@@ -122,8 +123,12 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="blueMeaning" destination="9cL-hh-wB8" id="S9T-AT-y2E"/>
+                        <outlet property="blueSlider" destination="MxV-fx-1zz" id="h4u-2C-jSK"/>
+                        <outlet property="greenMeaning" destination="Lva-uk-vIJ" id="gqc-ln-mGs"/>
+                        <outlet property="greenSlider" destination="tJF-ah-f59" id="piz-Ai-XFA"/>
                         <outlet property="redMeaning" destination="gwM-k6-crU" id="oXC-CS-6gy"/>
-                        <outlet property="redSlider" destination="CMC-nX-Qhd" id="3Ph-AD-XCR"/>
+                        <outlet property="redSlider" destination="CMC-nX-Qhd" id="YPS-Vy-FUG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
