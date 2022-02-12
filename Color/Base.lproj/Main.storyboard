@@ -105,10 +105,11 @@
                         <color key="backgroundColor" systemColor="systemGrayColor"/>
                         <constraints>
                             <constraint firstItem="FR1-Kc-AAV" firstAttribute="top" secondItem="1cC-jc-OLN" secondAttribute="bottom" constant="50" id="12t-Nc-afr"/>
-                            <constraint firstItem="1cC-jc-OLN" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="DpI-ct-8QN"/>
+                            <constraint firstItem="1cC-jc-OLN" firstAttribute="height" secondItem="FR1-Kc-AAV" secondAttribute="height" multiplier="1.28571" id="3tv-Ep-mkS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FR1-Kc-AAV" secondAttribute="trailing" constant="20" id="EWD-bE-6ZP"/>
                             <constraint firstItem="1cC-jc-OLN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Gum-Ra-MUB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="FR1-Kc-AAV" secondAttribute="bottom" constant="20" id="JOo-nx-LD6"/>
                             <constraint firstItem="1cC-jc-OLN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="23" id="e6z-ci-cvF"/>
-                            <constraint firstAttribute="trailing" secondItem="FR1-Kc-AAV" secondAttribute="trailing" constant="20" id="hD4-Bd-sj1"/>
                             <constraint firstItem="FR1-Kc-AAV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="m6x-uP-Q5n"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1cC-jc-OLN" secondAttribute="trailing" constant="20" id="uU7-x1-ID3"/>
                         </constraints>
