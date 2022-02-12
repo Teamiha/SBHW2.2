@@ -23,25 +23,31 @@
                                     <constraint firstAttribute="width" secondItem="1cC-jc-OLN" secondAttribute="height" multiplier="187:90" id="at1-Fh-3sD"/>
                                 </constraints>
                             </view>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="hRF-RO-tbf">
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="hRF-RO-tbf">
                                 <rect key="frame" x="20" y="282" width="374" height="30"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CQr-wK-MmL">
-                                        <rect key="frame" x="0.0" y="0.0" width="51" height="30"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Red:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CQr-wK-MmL">
+                                        <rect key="frame" x="0.0" y="0.0" width="23" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gwM-k6-crU">
-                                        <rect key="frame" x="71" y="0.0" width="36" height="30"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.50" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gwM-k6-crU">
+                                        <rect key="frame" x="43" y="0.0" width="44" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="CMC-nX-Qhd">
-                                        <rect key="frame" x="125" y="0.0" width="251" height="31"/>
+                                        <rect key="frame" x="105" y="0.0" width="271" height="31"/>
+                                        <connections>
+                                            <action selector="redSliderAction" destination="BYZ-38-t0r" eventType="valueChanged" id="WY6-X8-j6U"/>
+                                        </connections>
                                     </slider>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="gwM-k6-crU" firstAttribute="width" secondItem="CMC-nX-Qhd" secondAttribute="height" multiplier="22:15" id="Sfy-qP-Ydn"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -56,6 +62,10 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1cC-jc-OLN" secondAttribute="trailing" constant="20" id="uU7-x1-ID3"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="redMeaning" destination="gwM-k6-crU" id="oXC-CS-6gy"/>
+                        <outlet property="redSlider" destination="CMC-nX-Qhd" id="3Ph-AD-XCR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
