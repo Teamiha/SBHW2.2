@@ -9,6 +9,8 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    @IBOutlet weak var label: UIView!
+    
     @IBOutlet weak var redMeaning: UILabel!
     @IBOutlet weak var greenMeaning: UILabel!
     @IBOutlet weak var blueMeaning: UILabel!
@@ -21,7 +23,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        label.layer.cornerRadius = 10
     }
 
     @IBAction func redSliderAction() {
