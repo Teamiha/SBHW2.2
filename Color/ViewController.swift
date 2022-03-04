@@ -25,7 +25,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         label.layer.cornerRadius = 10
     }
-    override func viewWillLayoutSubviews(){
+    override func viewWillLayoutSubviews(){ 
         label.backgroundColor = UIColor.init(red: CGFloat(redSlider.value), green: CGFloat(greenSlider.value), blue: CGFloat(blueSlider.value), alpha: 1)
         
     }
